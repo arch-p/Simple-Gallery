@@ -211,23 +211,3 @@ body {
 .full-image-viewer .next {
     right: 20px;
 }
-
-
-/* Add animation styles */
-@keyframes slide {
-    0% { transform: translateX(0); } /* Start from left */
-    100% { transform: translateX(100%); } /* End at right */
-}
-
-.image-animation {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 200%; /* Double the width for seamless animation */
-    height: 100%;
-    animation: slide 2s linear infinite; /* Fluid infinite animation */
-}
-
-.gallery-image-container:hover .image-animation {
-    animation-play-state: paused; /* Pause animation on hover */
-}
